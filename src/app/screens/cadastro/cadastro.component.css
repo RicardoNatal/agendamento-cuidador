@@ -1,0 +1,23 @@
+ .total {
+  width: 99.9%;
+  background-color: blue;
+  text-align: center;
+ }
+
+ .conjunto {
+  margin-top: 10px;
+  background-color: pink;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+
+ .componentes {
+  background-color: aqua;
+ }
+
+ .endereco {
+  display: flex;
+  flex-direction: column;
+ }
+

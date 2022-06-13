@@ -1,0 +1,135 @@
+<form nz-form [formGroup]="form">
+  <div class="total">
+    <h1>Cadastre-se</h1>
+    <div nz-col [nzSpan]="24" class="conjunto">
+      <div class="componentes">
+        <nz-radio-group [(ngModel)]="radioValue" id="grupoRadio">
+          <label nz-radio nzValue="paciente">Paciente</label>
+          <label nz-radio nzValue="cuidador">Cuidador</label>
+        </nz-radio-group>
+        <div nz-row [nzGutter]="8">
+          <nz-form-item>
+            <nz-form-label>Nome</nz-form-label>
+            <nz-form-control nzErrorTip="Campo obrigatório">
+              <input
+                type="text"
+                placeholder="Nome"
+                nz-input
+                formControlName="name"
+              />
+            </nz-form-control>
+          </nz-form-item>
+
+          <nz-form-item>
+            <nz-form-label>Idade</nz-form-label>
+            <nz-form-control nzErrorTip="Campo obrigatório">
+              <input
+                type="text"
+                placeholder="Idade"
+                nz-input
+                formControlName="age"
+              />
+            </nz-form-control>
+          </nz-form-item>
+
+          <nz-form-item>
+            <nz-form-label>CPF</nz-form-label>
+            <nz-form-control nzErrorTip="Campo obrigatório">
+              <input
+                type="text"
+                placeholder="CPF"
+                nz-input
+                formControlName="cpf"
+              />
+            </nz-form-control>
+          </nz-form-item>
+        </div>
+
+        <div nz-row [nzGutter]="8">
+          <nz-form-item>
+            <nz-form-label>Descrição</nz-form-label>
+            <nz-form-control nzErrorTip="Campo obrigatório">
+              <textarea
+                type="text"
+                placeholder="Informe a descrição do seu serviço ou do que precisa aqui"
+                nz-input
+                formControlName="description"
+              ></textarea>
+            </nz-form-control>
+          </nz-form-item>
+
+          <nz-form-item>
+            <nz-form-label>Preço</nz-form-label>
+            <nz-form-control nzErrorTip="Campo obrigatório">
+              <input type="text" nz-input formControlName="price" />
+            </nz-form-control>
+          </nz-form-item>
+        </div>
+
+        <div class="endereco">
+        <div nz-row [nzGutter]="8">
+          <nz-form-item>
+            <nz-form-label>Rua</nz-form-label>
+            <nz-form-control nzErrorTip="Campo obrigatório">
+              <input
+                type="text"
+                placeholder="Rua"
+                nz-input
+                formControlName="street"
+              />
+            </nz-form-control>
+          </nz-form-item>
+
+          <nz-form-item>
+            <nz-form-label>Número</nz-form-label>
+            <nz-form-control nzErrorTip="Campo obrigatório">
+              <input
+                type="number"
+                placeholder="Número"
+                nz-input
+                formControlName="number"
+              />
+            </nz-form-control>
+          </nz-form-item>
+
+          <nz-form-item>
+            <nz-form-label>CEP</nz-form-label>
+            <nz-form-control nzErrorTip="Campo obrigatório">
+              <input
+                type="text"
+                placeholder="CEP"
+                nz-input
+                formControlName="postalCode"
+              />
+            </nz-form-control>
+          </nz-form-item>
+
+          <nz-form-item>
+            <nz-form-label>Cidade</nz-form-label>
+            <nz-form-control nzErrorTip="Campo obrigatório">
+              <input
+                type="text"
+                placeholder="Cidade"
+                nz-input
+                formControlName="city"
+              />
+            </nz-form-control>
+          </nz-form-item>
+
+          <nz-form-item>
+            <nz-form-label>Estado</nz-form-label>
+            <nz-form-control nzErrorTip="Campo obrigatório">
+              <input
+                type="text"
+                placeholder="Estado"
+                nz-input
+                formControlName="state"
+              />
+            </nz-form-control>
+          </nz-form-item>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
